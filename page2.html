@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    welcome to page 2
+<br>
+
+<a href="index.html">
+Back to home page
+</a>
+<br>
+<a href="page3.html">
+Go to page 3
+
+</a>
+<!--using tags we can create different types of lists-->
+
+<h4>Unordered List</h4>
+<ul>
+<li>pizza</li>
+<li>apples</li>
+<li>chocolate
+    <ul>
+       <li>white chocolate</li>
+       <li>dark chocolate</li>
+    </ul>
+</li>
+
+</ul>
+
+<!--ol tags allows us to have numbered list that we can use in a website-->
+<h4>Ordered List</h4>
+<ol>
+<li>Wake up</li>
+<li>Get ready</li>
+<li>Go to work</li>
+</ol>
+
+<!--dt tags is the term and dd tags are used to define the term-->
+<h4>Description List</h4>
+<dl>
+    <dt>HTML</dt>
+    <dd>This adds structure to a webpage</dd>
+    <dt>CSS</dt>
+    <dd>This adds style to a webpage</dd>
+    <dt>JavaScript</dt>
+    <dd>This adds functionality to a webpage</dd>
+
+
+</dl>
+<br>
+<h1>Store Hours</h1>
+<!--using table tags we can create tables. no way-->
+<table bgcolor="black" width="700">
+    <tr bgcolor="gray">
+       <th width="100">Monday</th>
+       <th width="100">Tuesday</th>
+       <th width="100">Wednesday</th>
+       <th width="100">Thursday</th>
+       <th width="100">Friday</th>
+       <th width="100">Saturday</th>
+       <th width="100">Sunday</th>
+
+    </tr>
+    <tr bgcolor="lightgray" align="center">
+        <td>10-21</td>
+        <td>10-21</td>
+        <td>10-21</td>
+        <td>10-21</td>
+        <td>10-22</td>
+        <td>10-22</td>
+        <td>10-21</td>
+    </tr>
+</table>
+
+<br>
+<!--we can also begin to use CSS in order to add colour to the website so its not so fucking ugly and boring-->
+
+<h1 style="color: darkmagenta;">Colour</h1>
+<h1 style="color:rgb(252, 8, 8)">Colour</h1>
+<h1 style="color: green;">Colour</h1>
+
+<p style="background-color: darkcyan; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ullam explicabo aut repellat eos commodi laboriosam, reprehenderit nihil laudantium velit voluptatem ipsam consectetur quod fuga, omnis nobis iure sunt veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam saepe sed qui quo quaerat iste perferendis hic nulla sint! Odio et aliquam odit excepturi quam, ut nam explicabo aliquid perferendis.</p>
+<br>
+<h1>Span and Div</h1>
+<!--Span adds markup to a text or portion of a document-->
+<!--Div defines a division of a document-->
+<div style="background-color: lightgray;">
+<p><span style="color: red;">Although most people consider piranhas to be quite dangerous, they are, for the most part, 
+entirely harmless.</span> Piranhas rarely feed on large animals; they eat smaller fish and aquatic plants. 
+When confronted with humans, piranhas first instinct is to flee,
+ not attack. Their fear of humans makes sense. Far more piranhas are eaten
+ by people than people are eaten by piranhas. If the fish are well-fed, they wont bite humans.</p>
+
+<p>Although most people consider piranhas to be quite dangerous, they are, for the most part, 
+    entirely harmless. Piranhas rarely feed on large animals; they eat smaller fish and aquatic plants. 
+    When confronted with humans, piranhas first instinct is to flee,
+     not attack. Their fear of humans makes sense. Far more piranhas are eaten
+     by people than people are eaten by piranhas. If the fish are well-fed, they wont bite humans.</p>
+</div>
+<br>
+<!--using button tags we can make a button for our webpage, you can also make it a hyperlink using a tags around it-->
+
+<!--by using Javascript we begin to add functionality to this button, when clicked it changes the text from hello to goodbye-->
+<button  onclick="doSomething()" style="background-color: black; color: red; border-radius:5px; ">click here</button>
+
+<p id="test">Hello</p>
+<script>
+    function doSomething(){
+        document.getElementById("test").innerHTML = "Goodbye";  
+    }
+</script>
+</body>
+</html>
